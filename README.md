@@ -1,103 +1,289 @@
-# GenAI QuickRef
+# GenAI Quick Picks
 
-![Build](https://github.com/ARUNAGIRINATHAN-K/genai-quickref/actions/workflows/ci.yml/badge.svg)
+![Build](https://github.com/ARUNAGIRINATHAN-K/genai-quick-picks/actions/workflows/link-check.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![Version](https://img.shields.io/badge/version-1.0.0-green)
-![Contributors](https://img.shields.io/github/contributors/ARUNAGIRINATHAN-K/genai-quickref)
+![Version](https://img.shields.io/badge/version-2.0.0-green)
+![Contributors](https://img.shields.io/github/contributors/ARUNAGIRINATHAN-K/genai-quick-picks)
 
-> The fastest way to remember GenAI library syntax and patterns
+***GenAI Quick Picks** is a curated collection of practical cheat sheets for modern Generative AI development.*
 
+Instead of focusing only on syntax, this will demonstrate **how GenAI libraries are wired together to build real-world AI systems** such as:
 
-## Top GenAI Libraries
+ - AI Agents
+ - Retrieval-Augmented Generation (RAG)
+ - Multi-Agent Systems
+ - LLM Applications
+ - Structured Outputs
+ - Fine-Tuning Pipelines
+ - Multimodal AI Systems
+ - Production-Grade AI APIs
 
-### LLM Providers
+Designed for:
+
+ - GenAI Engineers
+ - AI Developers
+ - Machine Learning Engineers
+ - Students & Researchers
+ - Technical Interview Preparation
+---
+![GenAI](<docs/RAG Flowchart.png>)
+---
+
+# Top GenAI Libraries
+
+## Core Deep Learning
+
+- [PyTorch](Core/PyTorch.md)
+- [TensorFlow](Core/TensorFlow.md)
+- [Keras](Core/Keras.md)
+- [JAX](Core/JAX.md)
+
+---
+
+## LLM Providers
+
 - [OpenAI](Providers/OpenAI.md)
 - [Anthropic](Providers/Anthropic.md)
 - [Google Gemini](Providers/GoogleGemini.md)
+- [Mistral AI](Providers/Mistral.md)
 - [Groq](Providers/Groq.md)
 - [Cohere](Providers/Cohere.md)
-- [Mistral](Providers/Mistral.md)
 - [Together AI](Providers/TogetherAI.md)
 
-### Orchestration Frameworks
+---
+
+## Transformer & Foundation Model Libraries
+
+- [Transformers](FoundationModels/Transformers.md)
+- [Diffusers](FoundationModels/Diffusers.md)
+- [Tokenizers](FoundationModels/Tokenizers.md)
+- [Sentence Transformers](FoundationModels/SentenceTransformers.md)
+- [Safetensors](FoundationModels/Safetensors.md)
+
+---
+
+## Orchestration Frameworks
+
 - [LangChain](Orchestration/LangChain.md)
 - [LangGraph](Orchestration/LangGraph.md)
 - [LlamaIndex](Orchestration/LlamaIndex.md)
 - [DSPy](Orchestration/DSPy.md)
+- [Haystack](Orchestration/Haystack.md)
 
-### Agent Frameworks
+---
+
+## Agent Frameworks
+
 - [CrewAI](Agents/CrewAI.md)
 - [AutoGen](Agents/AutoGen.md)
 - [PydanticAI](Agents/PydanticAI.md)
-- [OpenAI Agents SDK](Agents/OpenAIAgents.md)
+- [OpenAI Agents SDK](Agents/OpenAIAgentsSDK.md)
+- [SmolAgents](Agents/SmolAgents.md)
+- [Agno](Agents/Agno.md)
 
-### Retrieval-Augmented Generation (RAG)
-- [Chroma](RAG/Chroma.md)
-- [FAISS](RAG/FAISS.md)
-- [Pinecone](RAG/Pinecone.md)
-- [Weaviate](RAG/Weaviate.md)
-- [Qdrant](RAG/Qdrant.md)
+---
 
-### Local Inference & Embeddings
-- [Transformers](LocalInference/Transformers.md)
-- [vLLM](LocalInference/vLLM.md)
-- [Ollama](LocalInference/Ollama.md)
-- [Sentence Transformers](LocalInference/SentenceTransformers.md)
+## Retrieval-Augmented Generation (RAG)
 
-### Structured Outputs & Validation
+- [LlamaIndex](RAG/LlamaIndex.md)
+- [LangChain RAG](RAG/LangChainRAG.md)
+- [Ragas](RAG/Ragas.md)
+- [FlashRank](RAG/FlashRank.md)
+- [Unstructured](RAG/Unstructured.md)
+- [Docling](RAG/Docling.md)
+- [MarkItDown](RAG/MarkItDown.md)
+
+---
+
+## Vector Databases & Search
+
+- [Chroma](VectorDB/Chroma.md)
+- [FAISS](VectorDB/FAISS.md)
+- [Pinecone](VectorDB/Pinecone.md)
+- [Qdrant](VectorDB/Qdrant.md)
+- [Weaviate](VectorDB/Weaviate.md)
+- [Milvus](VectorDB/Milvus.md)
+
+---
+
+## Embeddings
+
+- [Sentence Transformers](Embeddings/SentenceTransformers.md)
+- [FastEmbed](Embeddings/FastEmbed.md)
+- [FlagEmbedding](Embeddings/FlagEmbedding.md)
+- [Instructor Embeddings](Embeddings/InstructorEmbeddings.md)
+
+---
+
+## Local Inference & Serving
+
+- [Transformers](Inference/Transformers.md)
+- [vLLM](Inference/vLLM.md)
+- [SGLang](Inference/SGLang.md)
+- [Ollama](Inference/Ollama.md)
+- [Triton Inference Server](Inference/Triton.md)
+
+---
+
+## Fine-Tuning
+
+- [PEFT](FineTuning/PEFT.md)
+- [TRL](FineTuning/TRL.md)
+- [Unsloth](FineTuning/Unsloth.md)
+- [Axolotl](FineTuning/Axolotl.md)
+- [DeepSpeed](FineTuning/DeepSpeed.md)
+- [bitsandbytes](FineTuning/BitsAndBytes.md)
+
+---
+
+## Structured Outputs & Validation
+
 - [Pydantic](StructuredOutputs/Pydantic.md)
 - [Instructor](StructuredOutputs/Instructor.md)
 - [Outlines](StructuredOutputs/Outlines.md)
 
-### Evaluation & Testing
+---
+
+## Evaluation & Testing
+
 - [LangSmith](Evaluation/LangSmith.md)
 - [DeepEval](Evaluation/DeepEval.md)
 - [Ragas](Evaluation/Ragas.md)
+- [TruLens](Evaluation/TruLens.md)
 
-### Observability & Monitoring
-- [Arize Phoenix](Observability/ArizePhenix.md)
+---
+
+## Observability & Monitoring
+
+- [Arize Phoenix](Observability/ArizePhoenix.md)
 - [OpenTelemetry](Observability/OpenTelemetry.md)
+- [Weights & Biases](Observability/WandB.md)
+- [MLflow](Observability/MLflow.md)
 
-### Model Context Protocol (MCP)
+---
+
+## Multimodal AI
+
+- [Diffusers](Multimodal/Diffusers.md)
+- [Whisper](Multimodal/Whisper.md)
+- [OpenCV](Multimodal/OpenCV.md)
+- [Pillow](Multimodal/Pillow.md)
+- [Coqui TTS](Multimodal/CoquiTTS.md)
+
+---
+
+## API & Application Development
+
+- [FastAPI](Applications/FastAPI.md)
+- [Flask](Applications/Flask.md)
+- [Gradio](Applications/Gradio.md)
+- [Streamlit](Applications/Streamlit.md)
+
+---
+
+## Model Context Protocol (MCP)
+
 - [MCP Python SDK](MCP/MCPPythonSDK.md)
 - [FastMCP](MCP/FastMCP.md)
 
-## Reference
+---
 
-| **Library**              | **Languages**       | **Docs**                            | **Latest Version (Release Date)**            |
-|--------------------------|-----------------------|-----------------------------------------|---------------------------------------------|
-| [**LangChain**](https://github.com/langchain-ai/langchain)            | 🏷️ `Python`    | [docs.langchain.com](https://docs.langchain.com)                      | 1.4.8 (Jun 18, 2026)            |
-| [**LangGraph**](https://github.com/langchain-ai/langgraph)            | 🏷️ `Python`    | [docs.langchain.com/langgraph](https://docs.langchain.com/langgraph)            | 1.2.6 (Jun 18, 2026)            |
-| [**LlamaIndex**](https://github.com/run-llama/llama_index)           | 🏷️ `Python`| [developers.llamaindex.ai](https://developers.llamaindex.ai) | 0.14.22 (May 14, 2026)          |
-| [**Transformers**](https://github.com/huggingface/transformers)         | 🏷️ `Python`    | [huggingface.co/docs/transformers](https://huggingface.co/docs/transformers)        | v5.12.1 (Jun 15, 2026)         |
-| [**Diffusers**](https://github.com/huggingface/diffusers)            | 🏷️ `Python`| [huggingface.co/docs/diffusers](https://huggingface.co/docs/diffusers)           | 0.38.0 (May 1, 2026)      |
-| [**OpenAI Python SDK**](https://github.com/openai/openai-python)    | 🏷️ `Python`    | [platform.openai.com/docs](https://platform.openai.com/docs)     | 2.43.0 (Jun 17, 2026)         |
-| [**PandasAI**](https://github.com/sinaptik-ai/pandas-ai)            | 🏷️ `Python`    | [docs.pandas-ai.com](https://docs.pandas-ai.com)      | 3.0.0 (Oct 7, 2025)          |
-| [**PydanticAI**](https://github.com/pydantic/pydantic-ai)          | 🏷️ `Python`   | [ai.pydantic.dev](https://ai.pydantic.dev)         | 1.107.0 (Jun 10, 2026)        |
-| [**SentenceTransformers**](https://github.com/UKPLab/sentence-transformers) | 🏷️ `Python`    | [www.sbert.net](https://www.sbert.net)                           | 5.6.0 (Jun 16, 2026)         |
-| [**Faiss**](https://github.com/facebookresearch/faiss)               | 🏷️ `C++` `Python`| [faiss.ai](https://faiss.ai)                   | 1.14.3 (Jun 13, 2026)        |
-| [**PyTorch**](https://github.com/pytorch/pytorch)             | 🏷️ `Python` `C++`| [pytorch.org](https://pytorch.org)                             | 2.12.1 (Jun 18, 2026)        |
-| [**TensorFlow**](https://github.com/tensorflow/tensorflow)          | 🏷️ `C++` `Python`           | [tensorflow.org](https://tensorflow.org)                          | ~2.22.0 (June 2026)                        |
-| [**FastAPI**](https://github.com/tiangolo/fastapi)             | 🏷️ `Python`   | [fastapi.tiangolo.com](https://fastapi.tiangolo.com)                    | 0.137.2 (Jun 18, 2026)       |
-| [**Streamlit**](https://github.com/streamlit/streamlit)           | 🏷️ `Python`   | [docs.streamlit.io](https://docs.streamlit.io)                       | 1.58.0 (May 28, 2026)       |
-| [**MLflow**](https://github.com/mlflow/mlflow)              | 🏷️ `Python` `TS` | [mlflow.org](https://mlflow.org)                              | 3.14.0 (Jun 17, 2026)       |
-| [**Docling**](https://github.com/docling-project/docling)             | 🏷️ `Python`    | [docling-project.github.io](https://docling-project.github.io)               | 2.104.0 (Jun 19, 2026)       |
-| [**MarkItDown**](https://github.com/microsoft/markitdown)          | 🏷️ `Python`   | [GitHub repo/docs](https://github.com/microsoft/markitdown)                      | 0.1.6 (May 26, 2026)       |
+# Reference
 
-## Installation
+| **Library**              | **Languages**         | **Docs**                                      | **GitHub**                                                                 | **Primary Use Case**      |
+|--------------------------|-----------------------|-----------------------------------------------|----------------------------------------------------------------------------|---------------------------|
+| **PyTorch**              | 🏷️`Python` `C++`     | [Docs](https://pytorch.org)                   | [GitHub](https://github.com/pytorch/pytorch)                               | Deep Learning |
+| **TensorFlow**           | 🏷️`Python` `C++`     | [Docs](https://tensorflow.org)                | [GitHub](https://github.com/tensorflow/tensorflow)                         | Deep Learning |
+| **Transformers**         | 🏷️`Python`           | [Docs](https://huggingface.co/docs/transformers) | [GitHub](https://github.com/huggingface/transformers)                    | LLM Development |
+| **Diffusers**            | 🏷️`Python`           | [Docs](https://huggingface.co/docs/diffusers) | [GitHub](https://github.com/huggingface/diffusers)                         | Image Generation |
+| **LangChain**            | 🏷️`Python`           | [Docs](https://docs.langchain.com)            | [GitHub](https://github.com/langchain-ai/langchain)                        | LLM Applications |
+| **LangGraph**            | 🏷️`Python`           | [Docs](https://docs.langchain.com/langgraph)  | [GitHub](https://github.com/langchain-ai/langgraph)                        | Agent Workflows |
+| **LlamaIndex**           | 🏷️`Python`           | [Docs](https://developers.llamaindex.ai)      | [GitHub](https://github.com/run-llama/llama_index)                         | RAG Applications |
+| **CrewAI**               | 🏷️`Python`           | [Docs](https://docs.crewai.com)               | [GitHub](https://github.com/crewAIInc/crewAI)                              | Multi-Agent Systems |
+| **AutoGen**              | 🏷️`Python`           | [Docs](https://microsoft.github.io/autogen)   | [GitHub](https://github.com/microsoft/autogen)                             | AI Agents |
+| **PydanticAI**           | 🏷️`Python`           | [Docs](https://ai.pydantic.dev)               | [GitHub](https://github.com/pydantic/pydantic-ai)                          | Typed Agents |
+| **OpenAI Agents SDK**    | 🏷️`Python`           | [Docs](https://openai.github.io/openai-agents-python) | [GitHub](https://github.com/openai/openai-agents-python)              | Agent Development |
+| **Sentence Transformers**| 🏷️`Python`           | [Docs](https://www.sbert.net)                 | [GitHub](https://github.com/UKPLab/sentence-transformers)                  | Embeddings |
+| **FAISS**                | 🏷️`Python` `C++`     | [Docs](https://faiss.ai)                      | [GitHub](https://github.com/facebookresearch/faiss)                        | Vector Search |
+| **Chroma**               | 🏷️`Python`           | [Docs](https://docs.trychroma.com)            | [GitHub](https://github.com/chroma-core/chroma)                            | Vector Database |
+| **Qdrant**               | 🏷️`Python`           | [Docs](https://qdrant.tech/documentation)     | [GitHub](https://github.com/qdrant/qdrant)                                 | Vector Search |
+| **Pinecone**             | 🏷️`Python`           | [Docs](https://docs.pinecone.io)              | [GitHub](https://github.com/pinecone-io/pinecone-python-client)            | Managed Vector DB |
+| **vLLM**                 | 🏷️`Python`           | [Docs](https://docs.vllm.ai)                  | [GitHub](https://github.com/vllm-project/vllm)                             | High-Speed Inference |
+| **SGLang**               | 🏷️`Python`           | [Docs](https://docs.sglang.ai)                | [GitHub](https://github.com/sgl-project/sglang)                            | Fast LLM Serving |
+| **PEFT**                 | 🏷️`Python`           | [Docs](https://huggingface.co/docs/peft)      | [GitHub](https://github.com/huggingface/peft)                              | LoRA Fine-Tuning |
+| **TRL**                  | 🏷️`Python`           | [Docs](https://huggingface.co/docs/trl)       | [GitHub](https://github.com/huggingface/trl)                               | RLHF/DPO |
+| **Unsloth**              | 🏷️`Python`           | [Docs](https://docs.unsloth.ai)               | [GitHub](https://github.com/unslothai/unsloth)                             | Fast Fine-Tuning |
+| **DeepSpeed**            | 🏷️`Python`           | [Docs](https://www.deepspeed.ai)              | [GitHub](https://github.com/microsoft/DeepSpeed)                           | Distributed Training |
+| **FastAPI**              | 🏷️`Python`           | [Docs](https://fastapi.tiangolo.com)          | [GitHub](https://github.com/tiangolo/fastapi)                              | AI APIs |
+| **Streamlit**            | 🏷️`Python`           | [Docs](https://docs.streamlit.io)             | [GitHub](https://github.com/streamlit/streamlit)                           | AI Web Apps |
+| **Gradio**               | 🏷️`Python`           | [Docs](https://www.gradio.app)                | [GitHub](https://github.com/gradio-app/gradio)                             | AI Demos |
+| **MLflow**               | 🏷️`Python`           | [Docs](https://mlflow.org)                    | [GitHub](https://github.com/mlflow/mlflow)                                 | Experiment Tracking |
+| **LangSmith**            | 🏷️`Python`           | [Docs](https://www.langchain.com/langsmith)   | [GitHub](https://github.com/langchain-ai/langsmith-sdk)                    | LLM Evaluation |
+| **DeepEval**             | 🏷️`Python`           | [Docs](https://deepeval.com)                  | [GitHub](https://github.com/confident-ai/deepeval)                         | AI Testing |
+| **Ragas**                | 🏷️`Python`           | [Docs](https://docs.ragas.io)                 | [GitHub](https://github.com/explodinggradients/ragas)                      | RAG Evaluation |
+| **Docling**              | 🏷️`Python`           | [Docs](https://docling-project.github.io/docling) | [GitHub](https://github.com/docling-project/docling)                    | Document Processing |
+| **MarkItDown**           | 🏷️`Python`           | [Docs](https://github.com/microsoft/markitdown) | [GitHub](https://github.com/microsoft/markitdown)                        | Document Conversion |
+| **Whisper**              | 🏷️`Python`           | [Docs](https://github.com/openai/whisper)     | [GitHub](https://github.com/openai/whisper)                                | Speech Recognition |
+| **OpenCV**               | 🏷️`Python` `C++`     | [Docs](https://opencv.org)                    | [GitHub](https://github.com/opencv/opencv)                                 | Computer Vision |
+
+---
+
+# Recommended Learning Path
+
+```text
+1. Python Fundamentals
+        ↓
+2. PyTorch
+        ↓
+3. Transformers + Tokenizers
+        ↓
+4. Prompt Engineering
+        ↓
+5. LangChain + LlamaIndex
+        ↓
+6. Embeddings + Vector Databases
+        ↓
+7. Retrieval-Augmented Generation
+        ↓
+8. Agent Frameworks
+        ↓
+9. Fine-Tuning
+        ↓
+10. Evaluation & Observability
+        ↓
+11. Deployment & Serving
+        ↓
+12. Production GenAI Systems
+```
+
+---
+
+# Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/ARUNAGIRINATHAN-K/genai-quickref.git
-cd genai-quickref
+git clone https://github.com/ARUNAGIRINATHAN-K/genai-quick-picks.git
+cd genai-quick-picks
 ```
 
-## Changelog
+---
+
+# Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and updates.
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Contributing
+
+Contributions are welcome.
+
+If you would like to add a new library, improve examples, fix bugs, or enhance documentation, feel free to submit a Pull Request.
+
+---
+
+# License
+
+This project is licensed under the MIT License see the [LICENSE](LICENSE) file for details.
