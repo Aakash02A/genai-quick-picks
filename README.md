@@ -203,36 +203,6 @@ Designed for:
 
 ---
 
-# Recommended Learning Path
-
-```text
-1. Python Fundamentals
-        ↓
-2. PyTorch
-        ↓
-3. Transformers + Tokenizers
-        ↓
-4. Prompt Engineering
-        ↓
-5. LangChain + LlamaIndex
-        ↓
-6. Embeddings + Vector Databases
-        ↓
-7. Retrieval-Augmented Generation
-        ↓
-8. Agent Frameworks
-        ↓
-9. Fine-Tuning
-        ↓
-10. Evaluation & Observability
-        ↓
-11. Deployment & Serving
-        ↓
-12. Production GenAI Systems
-```
-
----
-
 # Installation
 
 Clone the repository:
